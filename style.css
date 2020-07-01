@@ -115,12 +115,10 @@ padding: 0 0.8em;
 }
 
 .image {
-    margin-right: 20px;
-    margin-left: 20px;
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    min-width: 300px;
+    min-width: 100%;
     height: auto;
 }
 
