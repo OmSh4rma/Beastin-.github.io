@@ -1,245 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
-            </style> 
-     
-            <title>Beastin' Online Store</title>
-        
-            <!--Bootstrap CDN-->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-          
-        
-            <!-- Font Awesome CDN-->
-            <script src="https://kit.fontawesome.com/71efe2c540.js" crossorigin="anonymous"></script>
-        
-            <!--Slick Slider-->
-            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        
-            <!--Custom Stylesheet-->
-                <link rel="stylesheet"href="./css/style.css" />
-        
-      
-    </head>
-    <body>
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-sm12 col-12">
-                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white"data-toggle="dropdown" 
-                        aria-haspopup="true"
-                        aria-expanded="false">
-                        GBP
-                        </button>
-                        <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">USD-Dollars</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12 text center" >
-                        <h2 class="my-md-3 site-title text-white text-center">Beastin'</h2>
-                    </div>
-                    <div class="col-md-4 col-12 text-right" >
-                        <p class="my-md--4 header-links">
-                        <a href="signIn.html" class="px-2">Sign In</a>
-                     </p>
-                    </div>
-            
-                </div>
-            </div>
-            <div class="container-fluid p-0">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="index.html">SHOP <span class="sr-only">(current)</span></a>
-                        </li>
-                          <li class="cart">
-                            <a href="cart.html">
-                                <ion-icon name="basket"></ion-icon>CART <span>0</span>
-                            </a>
-                          </li>
-                      </ul>
-                    </div>
-            
-            
-        </header>
-        
-        <style>
-            body {font-family: Arial, Helvetica, sans-serif;}
-            * {box-sizing: border-box;}
-            
-            /* Full-width input fields */
-            input[type=text], input[type=password] {
-              width: 100%;
-              padding: 15px;
-              margin: 5px 0 22px 0;
-              display: inline-block;
-              border: none;
-              background: #f1f1f1;
-            }
-            
-            /* Add a background color when the inputs get focus */
-            input[type=text]:focus, input[type=password]:focus {
-              background-color: #ddd;
-              outline: none;
-            }
-            
-            /* Set a style for all buttons */
-            button {
-              background-color: #4CAF50;
-              color: white;
-              padding: 14px 20px;
-              margin: 8px 0;
-              border: none;
-              cursor: pointer;
-              width: 100%;
-              opacity: 0.9;
-            }
-            
-            button:hover {
-              opacity:1;
-            }
-            
-            /* Extra styles for the cancel button */
-            .cancelbtn {
-              padding: 14px 20px;
-              background-color: #f44336;
-            }
-            
-            /* Float cancel and signup buttons and add an equal width */
-            .cancelbtn, .signupbtn {
-              float: left;
-              width: 50%;
-            }
-            
-            /* Add padding to container elements */
-            .container {
-              padding: 16px;
-            }
-            
-            /* The Modal (background) */
-            .modal {
-              display: none; /* Hidden by default */
-              position: fixed; /* Stay in place */
-              z-index: 1; /* Sit on top */
-              left: 0;
-              top: 0;
-              width: 100%; /* Full width */
-              height: 100%; /* Full height */
-              overflow: auto; /* Enable scroll if needed */
-              background-color: #474e5d;
-              padding-top: 50px;
-            }
-            
-            /* Modal Content/Box */
-            .modal-content {
-              background-color: #fefefe;
-              margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-              border: 1px solid #888;
-              width: 80%; /* Could be more or less, depending on screen size */
-            }
-            
-            /* Style the horizontal ruler */
-            hr {
-              border: 1px solid #f1f1f1;
-              margin-bottom: 25px;
-            }
-             
-            /* The Close Button (x) */
-            .close {
-              position: absolute;
-              right: 35px;
-              top: 15px;
-              font-size: 40px;
-              font-weight: bold;
-              color: #f1f1f1;
-            }
-            
-            .close:hover,
-            .close:focus {
-              color: #f44336;
-              cursor: pointer;
-            }
-            
-            /* Clear floats */
-            .clearfix::after {
-              content: "";
-              clear: both;
-              display: table;
-            }
-            
-            /* Change styles for cancel button and signup button on extra small screens */
-            @media screen and (max-width: 300px) {
-              .cancelbtn, .signupbtn {
-                 width: 100%;
-              }
-            }
-            </style>
-            <body>
-            
-            <h2>Modal Signup Form</h2>
-            
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
-            
-            <div id="id01" class="modal">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <form class="modal-content" action="/action_page.php">
-                <div class="container">
-                  <h1>Sign Up</h1>
-                  <p>Please fill in this form to create an account.</p>
-                  <hr>
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-            
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-            
-                  <label for="psw-repeat"><b>Repeat Password</b></label>
-                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                  
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                  </label>
-            
-                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-            
-                  <div class="clearfix">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="signupbtn">Sign Up</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            
-            <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
-            
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
-            </script>
-            
-    
+<html>
+  <head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Noto+Serif+Display:wght@300&family=Tulpen+One&display=swap" rel="stylesheet">
+       <title>LAXMII Enterprise ltd</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+   <link rel="shortcut icon" href="images/looog.001.png" />
+    <style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  
+  background-color: white;
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+#navbar #logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+#navbar a.active {
+  
+  background-color: #000000;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 100px;
+  right: 45px;
+  font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+  </head>
+  <body>
+  <div id="content-desktop">
+  <div id="navbar">
+  <a href="#default" id="logo" style="font-family: 'Noto Serif Display', serif; padding-top: 0.5px;"><img src="images/looog.001.png" style="height: 50px; width: 50px ; object-fit:contain;"/></a> 
+      <a href="#default" style="font-family: 'Italiana', serif; font-size: 24px">LAXMII Enterprise ltd</a>
+  <div id="navbar-right" style="font-family: 'Italiana', serif;">
+    <a class="active" href="index.html">Home</a>
+    <a  href="products.html">Products</a>
+    <a href="contact.html">Contact </a>
+     <a href="login.html">Login</a>
+  </div>
 </div>
 
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-        <script src="mainting.js"></script>
+</div>
 
+
+<div id="content-mobile">
+
+<div id="navbar">
+  <a href="#default" id="logo" style="font-family: 'Noto Serif Display', serif; padding-top: 0.5px;"><img src="images/looog.001.png" style="height: 50px; width: 50px ; float: left;"/></a> 
+      <a href="#default" style="float: right; padding-top:0.5px;"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></a>
+      
+</div>
+<div id="myNav" class="overlay" style="font-family: 'Italiana', serif; color: #000;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <a href="#">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
     
-    </body>
+    
+  </div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</div>
+
+<div style="margin-top:100px;padding:15px 15px 10px;font-size:18px">
+  <p style="font-family: 'Noto Serif Display', serif;"><b>Welcome!</b></p>
+  <p style="font-family: 'Italiana', serif;">LAXMII Enterprise ltd is a British Import and Export company, specialising in wholesale foods and beverages.<p>
+  <p style="font-family: 'Noto Serif Display', serif;">
+  Has several products, Pastis Suprême, Tangawisi Suprême, Café Rum Suprême. 
+  We are also a leading firm focusing on wholesale of frozen Chicken & Fish (in particular, Horse Mackeral) from various destinations and brands.</p>
+  
+    <p style="font-family: 'Noto Serif Display', serif;"> You've come to the right place if you're looking to import chicken products, alcoholic beverages, oil, or spaghetti.
+In the Democratic Republic of the Congo, Zambia, Namibia, Mozambique, Angola, Rwanda, Uganda, and Tanzania, we have a very strong distribution network. We provide tracking, insurance, and delivery to your desired location or warehouse when you place an order with us.</p>
+  
+  <p style="font-family: 'Noto Serif Display', serif;">
+  Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+    <p><b>Note:</b> Operated by Sharma Group</p>
+</div>
+<!--
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  } else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+    document.getElementById("logo").style.fontSize = "24px";
+  }
+}
+</script>-->
+
+     </body>
 </html>
-
-
